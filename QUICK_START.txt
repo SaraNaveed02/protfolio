@@ -1,0 +1,260 @@
+🚀 QUICK START GUIDE
+
+Get your portfolio running in 3 minutes!
+
+=====================================
+STEP 1: Start Development Server
+=====================================
+
+Open terminal in the portfolio folder and run:
+
+$ npm run dev
+
+The server starts at: http://localhost:3000
+
+Open in your browser - you should see the animated portfolio!
+
+
+=====================================
+STEP 2: Customize Your Information
+=====================================
+
+Edit these files to personalize your portfolio:
+
+1. Update Your Profile
+   File: src/data/portfolio.ts
+   
+   • projects array - Add your projects
+   • skills array - Add your skills
+   • experience array - Add your work history
+   • education array - Add your education
+   • testimonials array - Add testimonials
+
+2. Update Hero Text
+   File: src/components/sections/Hero.tsx
+   
+   Change:
+   - const name = "Your Name"
+   - const title = "Your Title"
+   - const subtitle = "Your subtitle"
+
+3. Update Contact Info
+   File: src/components/sections/Contact.tsx
+   
+   • Email address
+   • Phone number
+   • Location
+
+4. Update Social Links
+   File: src/components/sections/Footer.tsx
+   
+   • GitHub URL
+   • LinkedIn URL
+   • Twitter URL
+   • Email link
+
+5. Update About Section
+   File: src/components/sections/About.tsx
+   
+   • Bio text
+   • Timeline items
+   • Statistics
+
+
+=====================================
+STEP 3: Add Your Images
+=====================================
+
+1. Create images for your portfolio
+2. Place them in: public/images/
+3. Update references in src/data/portfolio.ts
+
+Example image paths:
+- /images/profile.jpg (your profile photo)
+- /images/project-1.jpg (project images)
+- etc.
+
+
+=====================================
+BUILD & DEPLOY
+=====================================
+
+When ready to go live:
+
+1. Build for production:
+   $ npm run build
+
+2. Test production build locally:
+   $ npm run start
+
+3. Deploy to Vercel (recommended):
+   • Push code to GitHub
+   • Connect repository to Vercel
+   • Vercel automatically deploys
+
+Or follow DEPLOYMENT_GUIDE.md for other options.
+
+
+=====================================
+FILE LOCATIONS TO CUSTOMIZE
+=====================================
+
+Portfolio Data:
+  └── src/data/portfolio.ts
+
+Components:
+  ├── src/components/sections/Hero.tsx
+  ├── src/components/sections/About.tsx
+  ├── src/components/sections/Contact.tsx
+  └── src/components/sections/Footer.tsx
+
+Styles:
+  ├── src/app/globals.css (colors, fonts)
+  └── src/app/layout.tsx (metadata)
+
+Images:
+  └── public/images/
+
+
+=====================================
+USEFUL COMMANDS
+=====================================
+
+Development:
+  $ npm run dev              # Start dev server
+  $ npm run build            # Build for production
+  $ npm run start            # Start production server
+  $ npm run lint             # Check code quality
+
+Cleaning:
+  $ rm -rf .next             # Clear Next.js cache
+  $ rm -rf node_modules      # Remove dependencies (then: npm install)
+
+
+=====================================
+COMMON CUSTOMIZATIONS
+=====================================
+
+Change Colors:
+  Edit src/app/globals.css
+  
+  :root {
+    --primary: #a855f7;     /* Change this color */
+    --accent: #ec4899;      /* Or this one */
+  }
+
+Change Animation Speed:
+  Edit src/utils/animations.ts
+  
+  Change the duration values (in seconds)
+  e.g., duration: 0.6 to duration: 1.0
+
+Change Fonts:
+  Edit src/app/layout.tsx
+  
+  Import different font from next/font/google
+
+Change Background:
+  Edit src/app/globals.css
+  
+  body {
+    background: your-color-here;
+  }
+
+
+=====================================
+TESTING YOUR SITE
+=====================================
+
+On Desktop:
+  ✓ Test all sections scroll smoothly
+  ✓ Hover over buttons and cards
+  ✓ Test contact form
+  ✓ Check animations run smoothly
+
+On Mobile:
+  ✓ Use Chrome DevTools (F12)
+  ✓ Toggle device toolbar (Ctrl+Shift+M)
+  ✓ Test all touch interactions
+  ✓ Check layout responsiveness
+
+Performance:
+  ✓ Open DevTools (F12)
+  ✓ Go to Lighthouse tab
+  ✓ Run audit
+  ✓ Check scores (target: 90+)
+
+
+=====================================
+TROUBLESHOOTING
+=====================================
+
+Dev server won't start:
+  $ rm -rf .next
+  $ npm run dev
+
+Build fails:
+  $ npm install
+  $ npm run build
+
+Images not showing:
+  • Check files in public/images/
+  • Verify correct path in portfolio.ts
+  • Restart dev server
+
+Animations not smooth:
+  • Check browser performance
+  • Try reducing particle count
+  • Clear browser cache
+
+CSS not working:
+  • Make sure you're using Tailwind classes
+  • Restart dev server if you add new Tailwind classes
+
+
+=====================================
+NEXT STEPS
+=====================================
+
+After customization:
+
+1. ✓ Review all content for typos
+2. ✓ Test all links
+3. ✓ Test contact form
+4. ✓ Check mobile responsiveness
+5. ✓ Test performance (Lighthouse)
+6. ✓ Deploy to Vercel/hosting
+7. ✓ Set up custom domain
+8. ✓ Add analytics
+
+See DEPLOYMENT_GUIDE.md for detailed deployment steps.
+
+
+=====================================
+DOCUMENTATION
+=====================================
+
+For more information, see:
+
+• PORTFOLIO_README.md       - Full documentation
+• CUSTOMIZATION_GUIDE.md    - Detailed customization
+• DEPLOYMENT_GUIDE.md       - How to deploy
+• COMPONENT_REFERENCE.md    - Component details
+• BUILD_SUMMARY.txt         - Build overview
+
+
+=====================================
+GETTING HELP
+=====================================
+
+1. Check code comments in components
+2. Review Framer Motion docs: https://framer.com/motion/
+3. Review Next.js docs: https://nextjs.org/docs
+4. Check Tailwind CSS docs: https://tailwindcss.com/docs
+
+
+=====================================
+
+Happy coding! Your portfolio is ready to customize! 🎉
+
+Start with: $ npm run dev
